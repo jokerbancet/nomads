@@ -242,4 +242,26 @@ header .btn-get-started:hover {
 .section-footer a {
   color: #071C4D;
 }
+
+.section-details-header {
+  min-height: 310px;
+  background: #b1b1b1;
+  margin-top: -70px;
+}
+
+.section-details-content {
+  margin-top: -210px;
+  min-height: 100vh;
+}
+
+.section-details-content .breadcrumb {
+  background-color: transparent;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.section-details-content .breadcrumb-item.active {
+  font-weight: bold;
+  color: #071C4D;
+}
 /*# sourceMappingURL=main.css.map */

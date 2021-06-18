@@ -257,3 +257,27 @@ header{
         color: #071C4D;
     }
 }
+
+.section-details-header{
+    min-height : 310px;
+    background: #b1b1b1;
+    margin-top: -70px;
+}
+
+.section-details-content{
+    margin-top: -210px;
+    min-height: 100vh;
+
+    .breadcrumb{
+        background-color: transparent;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .breadcrumb-item{
+        &.active{
+            font-weight: bold;
+            color: #071C4D;
+        }
+    }
+}
