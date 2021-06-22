@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="frontend/libraries/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="frontend/libraries/xzoom/xzoom.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="frontend/styles/main.css">
@@ -83,7 +84,26 @@
                                 Republic of Indonesia Raya
                              </p>
                              <div class="gallery">
-
+                                <div class="xzoom-container">
+                                    <img src="frontend/images/pic_featured.jpg" class="xzoom" id="xzoom-default" xoriginal="frontend/images/pic_featured.jpg">
+                                </div>
+                                <div class="xzoom-thumbs">
+                                    <a href="frontend/images/pic_featured.jpg">
+                                        <img src="frontend/images/pic_featured.jpg" class="xzoom-gallery" width="128" xpreview="frontend/images/pic_featured.jpg">
+                                    </a>
+                                    <a href="frontend/images/pic_featured.jpg">
+                                        <img src="frontend/images/pic_featured.jpg" class="xzoom-gallery" width="128" xpreview="frontend/images/pic_featured.jpg">
+                                    </a>
+                                    <a href="frontend/images/pic_featured.jpg">
+                                        <img src="frontend/images/pic_featured.jpg" class="xzoom-gallery" width="128" xpreview="frontend/images/pic_featured.jpg">
+                                    </a>
+                                    <a href="frontend/images/pic_featured.jpg">
+                                        <img src="frontend/images/pic_featured.jpg" class="xzoom-gallery" width="128" xpreview="frontend/images/pic_featured.jpg">
+                                    </a>
+                                    <a href="frontend/images/pic_featured.jpg">
+                                        <img src="frontend/images/pic_featured.jpg" class="xzoom-gallery" width="128" xpreview="frontend/images/pic_featured.jpg">
+                                    </a>
+                                </div>
                              </div>
                              <h2>
                                 Tentang Wisata
@@ -185,6 +205,17 @@
     <script src="frontend/libraries/jquery/jquery-3.6.0.min.js"></script>
     <script src="frontend/libraries/bootstrap/js/bootstrap.js"></script>
     <script src="frontend/libraries/retina/retina.min.js"></script>
+    <script src="frontend/libraries/xzoom/xzoom.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.xzoom, .xzoom-gallery').xzoom({
+                zoomWidth: 300,
+                title: false,
+                tint: '#333',
+                xoffset: 15
+            });
+        });
+    </script>
 </body>
 
 </html>
